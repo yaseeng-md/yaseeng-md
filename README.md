@@ -27,6 +27,8 @@ Data Science
 Natural Language Processing (NLP)
 Computer Vision
 Recommendation Systems
+
+
 Skills:
 
 Programming Languages: Python
@@ -34,13 +36,24 @@ Machine Learning Frameworks: TensorFlow, PyTorch, scikit-learn
 Data Processing: pandas, NumPy
 Development Tools: Git
 Visualization: Matplotlib, Seaborn
+
+
 Projects:
 
+
 Movie Recommendation System: Developed a hybrid recommendation system combining collaborative and content-based filtering techniques to provide personalized movie suggestions.
+
+
 Image Classification: Implemented a deep learning model using convolutional neural networks (CNNs) to classify images with high accuracy.
+
+
 Connect with Me:
 
 LinkedIn: www.linkedin.com/in/yaseen-g-896498216
+
+
 Email: gandlurumohammedyaseen@gmail.com
+
+
 Let's collaborate and make the world smarter together! 🚀
 

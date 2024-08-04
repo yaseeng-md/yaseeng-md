@@ -29,25 +29,18 @@ Computer Vision
 Recommendation Systems
 Skills:
 
-Programming Languages: Python, R, Java, C++
+Programming Languages: Python
 Machine Learning Frameworks: TensorFlow, PyTorch, scikit-learn
-Data Processing: pandas, NumPy, SQL
-Cloud Platforms: AWS, Google Cloud, Azure
-Development Tools: Git, Docker, Kubernetes
-Visualization: Matplotlib, Seaborn, Plotly
+Data Processing: pandas, NumPy
+Development Tools: Git
+Visualization: Matplotlib, Seaborn
 Projects:
 
 Movie Recommendation System: Developed a hybrid recommendation system combining collaborative and content-based filtering techniques to provide personalized movie suggestions.
 Image Classification: Implemented a deep learning model using convolutional neural networks (CNNs) to classify images with high accuracy.
-Chatbot Development: Created an NLP-based chatbot capable of understanding and responding to user queries in natural language.
-Education:
-
-[Your Degree, e.g., B.Sc. in Computer Science]
-[Your University, e.g., XYZ University]
 Connect with Me:
 
-LinkedIn: [Your LinkedIn URL]
-Twitter: [Your Twitter URL]
-Email: [Your Email Address]
+LinkedIn: www.linkedin.com/in/yaseen-g-896498216
+Email: gandlurumohammedyaseen@gmail.com
 Let's collaborate and make the world smarter together! 🚀
 

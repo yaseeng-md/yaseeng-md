@@ -3,17 +3,17 @@
 
 - 🔭 I’m currently working on **SAR Image Colorizarion Project**
 
-- 🌱 I’m currently learning **Natural Language Processing**
+- 🌱 I’m currently learning **Generative AI and GANs**
 
 - 👯 I’m looking to collaborate on **BERT Systems**
 
-- 💬 Ask me about **Machine Learning**
+- 💬 Ask me about **Machine Learning,Deep Learning, and AI**
 
 - 📫 How to reach me **gandlurumohammedyaseen@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/www.linkedin.com/in/yaseen-g-896498216" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/yaseen-g-896498216" height="30" width="40" /></a>
+<a href="www.linkedin.com/in/yaseeng-md" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/yaseen-g-896498216" height="30" width="40" /></a>
 <a href="https://kaggle.com/yaseen-g" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="yaseen-g" height="30" width="40" /></a>
 </p>
 

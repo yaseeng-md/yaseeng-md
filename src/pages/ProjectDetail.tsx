@@ -18,7 +18,7 @@ const ProjectDetail = () => {
       title: "SAR Image Colorization",
       description:
         "Developed a deep learning model to colorize Synthetic Aperture Radar (SAR) imagery using GANs and U-Net architectures.",
-        image: "/public/sar.jpg",
+        image: "/sar.jpg",
       techStack: ["PyTorch", "GANs", "Computer Vision", "Remote Sensing"],
       metrics: "Achieved 0.97 SSIM, 27.42 dB PSNR, and 0.0021 MSE",
       githubUrl:
@@ -29,7 +29,7 @@ const ProjectDetail = () => {
       title: "Explicit Content Detection",
       description:
         "Built a robust AI system for detecting and filtering explicit content using Vision Transformers and deep learning.",
-      image: "/public/explicit.jpg",
+      image: "/explicit.jpg",
       techStack: ["PyTorch","TensorFlow","ViT", "Swin ViT", "Transformers", "Linux"],
       metrics: "98.35% accuracy; 2% improvement over CNN methods",
       githubUrl: "https://github.com/yaseeng-md/Explicit-Content-Detection",
@@ -39,7 +39,7 @@ const ProjectDetail = () => {
       title: "Audio Deepfake Detection",
       description:
         "Created an ML system to identify manipulated audio recordings by analyzing spectral inconsistencies and voice patterns.",
-      image: "/public/audio.jpg",
+      image: "/audio.jpg",
       techStack: ["Librosa", "PyTorch", "MFCC", "LSTM", "Streamlit"],
       metrics: "98% accuracy with MFCC-LSTM; 96% with LFCC-LSTM",
       githubUrl: "https://github.com/yaseeng-md/Audio-DeepFake-Detection",
@@ -49,7 +49,7 @@ const ProjectDetail = () => {
       title: "Recommendation System",
       description:
         "Designed a hybrid recommendation system combining collaborative filtering and content-based approaches with Flask web deployment.",
-      image: "/public/recc.jpg",
+      image: "/recc.jpg",
       techStack: ["Flask", "Python", "Scikit-Learn", "Cosine Similarity"],
       metrics: "22% increase in user engagement metrics after implementation",
       githubUrl: "https://github.com/yaseeng-md/Movie_recommedation_Systems",

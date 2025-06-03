@@ -65,7 +65,7 @@ const Header = () => {
               </Link>
             ))}
             <Button asChild variant="outline" size="sm">
-              <a href="/public/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </Button>

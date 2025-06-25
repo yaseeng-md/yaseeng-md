@@ -101,6 +101,13 @@ const ProjectDetail = () => {
   }
 
   const projectDetails: Record<string, string> = {
+    "llama-website-summarization":
+`This project aims to automate the summarization of website content using large language models, addressing a growing need for digestible information in the age of information overload. Traditional summarization methods often struggle with noisy, unstructured web data and lack domain adaptability. To overcome this, I’m fine-tuning a LLaMA 2 7B model using parameter-efficient training techniques like LoRA, allowing for efficient training and deployment on low-resource devices.
+
+The pipeline integrates the Serper API to retrieve real-time website content and uses BeautifulSoup to parse and extract meaningful article data. This preprocessed content is then passed through a tailored summarization model designed to produce concise, coherent, and factual summaries.
+
+The project is still in development, with target metrics including a ROUGE-L score above 40, inference latency under 2 seconds, and a 40–60% reduction in model size via LoRA. These goals aim to make the system highly usable for real-world applications such as content aggregation, SEO optimization, and research summarization — all while maintaining deployability on edge devices or lightweight servers.`,
+    
     "sar-image-colorization": `This project addresses a key challenge in the geospatial domain: enhancing the interpretability of grayscale Synthetic Aperture Radar (SAR) images. SAR imagery, while rich in structural data, lacks visual clarity. I implemented a deep learning pipeline using Pix2Pix GAN architecture combined with a custom perceptual loss function to generate colorized versions of SAR images.
 
 The training process involved paired datasets of SAR and optical imagery, enabling the model to learn complex mappings between radar features and plausible color representations. This significantly improved downstream analytical tasks such as classification and segmentation.

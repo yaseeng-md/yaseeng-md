@@ -13,6 +13,18 @@ const ProjectDetail = () => {
 
   // Sample project data
   const projects: Record<string, ProjectCardProps> = {
+     "llama-website-summarization": {
+      id: "llama-website-summarization",
+      title: "Website Article Summarization with LLaMA 2",
+      description:
+        "Currently developing a fine-tuned LLaMA 2 7B model for summarizing website content using parameter-efficient training methods like LoRA. Incorporates Serper API for search-based retrieval and BeautifulSoup for web scraping.",
+      image: "/llama-summary.jpg",
+      techStack: ["Python", "LLaMA 2", "PEFT", "BeautifulSoup", "Serper API", "Streamlit", "Hugging Face"],
+      metrics:
+        "Targeting to decrese ROUGE score, reduce the model size and memory usage and decreasing inference time",
+      githubUrl: "https://github.com/yaseeng-md/llama-website-summarization" 
+    },
+    
     "sar-image-colorization": {
       id: "sar-image-colorization",
       title: "SAR Image Colorization",

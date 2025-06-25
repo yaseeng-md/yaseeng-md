@@ -6,6 +6,16 @@ import ProjectCard, { ProjectCardProps } from "@/components/ProjectCard";
 const Projects = () => {
   // Complete projects list
   const allProjects: ProjectCardProps[] = [
+    {
+    id: "llama-website-summarization",
+    title: "Website Article Summarization with LLaMA 2",
+    description: "Ongoing project focused on fine-tuning a LLaMA 2 7B model using parameter-efficient training techniques for summarizing website articles. Combines web retrieval via Serper API and scraping with BeautifulSoup, targeting lightweight deployment.",
+    image: "/llama-summary.jpg",
+    techStack: ["Python", "LLaMA 2", "Serper API", "BeautifulSoup", "Streamlit", "PEFT", "Hugging Face"],
+    metrics: "Targeting to decrese ROUGE score, reduce the model size and memory usage and decreasing inference time",
+    githubUrl: "https://github.com/yaseeng-md/llama-website-summarization" // Replace with actual URL
+  },
+    
   {
     id: "sar-image-colorization",
     title: "SAR Image Colorization",

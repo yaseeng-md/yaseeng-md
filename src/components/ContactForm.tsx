@@ -1,5 +1,6 @@
 
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { PROFILE } from "@/constants/profile";
 
 const ContactForm = () => {
   return (
@@ -19,10 +20,10 @@ const ContactForm = () => {
               </div>
               <h3 className="font-medium mb-2">Email</h3>
               <a
-                href="mailto:gandlurumohammedyaseen@gmail.com"
+                href={`mailto:${PROFILE.social.email}`}
                 className="text-muted-foreground hover:text-accent text-sm break-all"
               >
-                gandlurumohammedyaseen@gmail.com
+                {PROFILE.social.email}
               </a>
             </div>
 
@@ -32,10 +33,10 @@ const ContactForm = () => {
               </div>
               <h3 className="font-medium mb-2">Phone</h3>
               <a
-                href="tel:+918328377285"
+                href={`tel:${PROFILE.social.phone}`}
                 className="text-muted-foreground hover:text-accent"
               >
-                +91 8328377285
+                {PROFILE.social.phone}
               </a>
             </div>
 
@@ -45,7 +46,7 @@ const ContactForm = () => {
               </div>
               <h3 className="font-medium mb-2">LinkedIn</h3>
               <a
-                href="https://linkedin.com/in/yaseeng-md"
+                href={PROFILE.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent"
@@ -60,7 +61,7 @@ const ContactForm = () => {
               </div>
               <h3 className="font-medium mb-2">GitHub</h3>
               <a
-                href="https://github.com/yaseeng-md"
+                href={PROFILE.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent"

@@ -1,6 +1,7 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -10,12 +11,7 @@ const Experience = () => {
       <Header />
       <main className="flex-grow pt-24">
         <div className="container mx-auto px-4 py-12">
-          <div className="max-w-3xl mx-auto mb-12 text-center">
-            <h1 className="text-4xl font-bold mb-4">Experience & Education</h1>
-            <p className="text-muted-foreground">
-              My professional journey and educational background in machine learning and AI.
-            </p>
-          </div>
+          <AboutSection />
 
           <ExperienceSection />
 

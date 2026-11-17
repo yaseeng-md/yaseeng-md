@@ -1,18 +1,37 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import PublicationsSection from "./PublicationsSection";
 
 const ExperienceSection = () => {
   const experiences =[
   {
-    title: "Machine Learning Intern",
-    company: "Data Valley.ai",
-    duration: "Jan 2024 – Apr 2024",
-    description: "Developed and optimized machine learning models for real-world business use cases, with a primary focus on building a robust recommendation system.",
+    title: "AI & Vision Engineer",
+    company: "Terafac Technologies Private Limited",
+    duration: "Aug 2025 – Oct 2026",
+    description:
+      "Engineered Agentic AI systems, autonomous robotic workflows, and production-grade computer vision solutions, focusing on execution reliability, intelligent orchestration, and operational efficiency.",
     responsibilities: [
-      "Designed and deployed a personalized movie recommendation system tailored for a client’s use case.",
-      "Implemented collaborative filtering techniques including Cosine Similarity and Boltzmann Machines to enhance prediction accuracy and user satisfaction."
+      "Developed a swarm-based Agentic AI system using the Pi harness and multiple specialized Pi agents as autonomous workers, orchestrating distinct LLM applications through distributed, role-based workflows.",
+      "Architected a 3-phase execution pipeline with adaptive queue-based scheduling and indexed optimization, reducing control complexity and improving execution efficiency by approximately 30%.",
+      "Engineered and deployed a production-grade autonomous path-planning pipeline, achieving an 80% task success rate in real-world robotic operations.",
+      "Developed a raycasting-based successive approximation algorithm, improving pose correction accuracy from approximately 60% to nearly 100% on challenging edge cases.",
+      "Built an automated regression and simulation framework using Python and Flask, covering 100+ scenarios and reducing manual validation effort by approximately 70%.",
+      "Managed operations across 2 production sites, identifying system gaps, diagnosing operational bottlenecks, and implementing solutions to improve efficiency, reliability, and production throughput."
     ],
-  }
+  },
+  {
+      title: "Machine Learning Intern",
+      company: "DataValley.ai",
+      duration: "Jan 2024 – May 2024",
+      description:
+        "Developed and optimized machine learning solutions, specializing in recommendation systems, model evaluation, and scalable backend API development.",
+      responsibilities: [
+        "Developed a content-based recommendation engine using TF-IDF, cosine similarity, and attribute filtering, expanding catalog coverage by 32% across low-interaction niche items.",
+        "Built a Flask REST API for top-K recommendations and similar-item retrieval with fallback logic, achieving less than 45 ms average response latency under peak load.",
+        "Evaluated category, content-based, and hybrid recommendation models, achieving an 18% lift in NDCG@10 and a 24% improvement in Precision@5 over standard heuristic baselines.",
+        "Architected an automated testing suite using pytest, achieving 92% code coverage, and implemented Locust load testing to sustain 250+ requests/sec with less than 0.1% error rate."
+      ],
+    },
 ];
 
   const certifications =[
@@ -81,7 +100,12 @@ const ExperienceSection = () => {
           </div>
         </div>
 
-        <div>
+        {/* Publications Section (Positioned above Certifications) */}
+        <div className="mb-16">
+          <PublicationsSection />
+        </div>
+
+        <div id="certifications">
           <h2 className="text-3xl font-bold mb-12">Certifications & Education</h2>
           <div className="grid gap-6 sm:grid-cols-2">
             {certifications.map((cert, index) => (

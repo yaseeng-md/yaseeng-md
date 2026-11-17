@@ -7,40 +7,84 @@ const Projects = () => {
   // Complete projects list
   const allProjects: ProjectCardProps[] = [
     {
-    id: "llama-website-summarization",
-    title: "Website Article Summarization with LLaMA 2",
-    description: "Ongoing project focused on fine-tuning a LLaMA 2 7B model using parameter-efficient training techniques for summarizing website articles. Combines web retrieval via Serper API and scraping with BeautifulSoup, targeting lightweight deployment.",
-    image: "/llama-summary.jpg",
-    techStack: ["Python", "LLaMA 2", "Serper API", "BeautifulSoup", "Streamlit", "PEFT", "Hugging Face"],
-    metrics: "Targeting to decrese ROUGE score, reduce the model size and memory usage and decreasing inference time",
-    githubUrl: "https://github.com/yaseeng-md/llama-website-summarization" // Replace with actual URL
+    id : "amg",
+    title : "Agentic Multimodal Graph Augmented Retrieval System",
+    description : "AMG is an end-to-end multimodal Retrieval-Augmented Generation (RAG) system engineered for complex, layout-intensive documents (e.g., technical papers, financial filings, manuals, and reports containing tables, charts, infovis, and figures).",
+    image : "/rag.jpg",
+    techStack : ["Vector Databases", "Neo4j", "Qdrant", "ColPali", "Qwen 3.1VL", "NVIDIA Nemotron 3.5 Super-VL", "Query Router", "RAG", "BraveAPI", "Jina Reranker"],
+    metrics : "Benchmarked retrieval on ViDoRe v3 ArXivQA, achieving 84% Recall@1 and 96% Recall@10, Recall@1 92% and MRR@20 0.9355 across 100-query evaluation suite.",
+    githubUrl : "https://github.com/yaseeng-md/Agentic_Multimodal_Graph_Augmented_Retrieval_System"
+
+    },  
+    {
+    id: "ai-weekly-digest",
+    title: "AI-Powered Weekly Digest & News Intelligence System",
+    description: "An automated AI-powered news intelligence pipeline that collects articles from multiple RSS feeds, stores article content and metadata, groups related articles through clustering, and generates structured summaries using locally hosted LLMs. Built with LangGraph and Ollama, the system focuses on context-aware processing, adaptive article batching, and memory-efficient summarization to handle large volumes of news without exceeding local hardware constraints.",
+    image: "/ai-weekly-digest.jpg",
+    techStack: [
+        "Python",
+        "RSS Feeds",
+        "LangGraph",
+        "Ollama",
+        "Qwen 2.5 3B",
+        "SQLite",
+        "Article Clustering",
+        "Context-Aware Batching",
+        "Tokenization",
+        "Markdown",
+        "Docker"
+    ],
+    metrics: "Designed for context-window-aware article batching, controlled LLM generation, and reduced local GPU memory pressure. Quantitative performance benchmarks have not yet been established.",
+    githubUrl: "https://github.com/yaseeng-md/ai-weekly-digest"
   },
+  //   {
+  //   id: "llama-website-summarization",
+  //   title: "Website Article Summarization with LLaMA 2",
+  //   description: "Ongoing project focused on fine-tuning a LLaMA 2 7B model using parameter-efficient training techniques for summarizing website articles. Combines web retrieval via Serper API and scraping with BeautifulSoup, targeting lightweight deployment.",
+  //   image: "/llama-summary.jpg",
+  //   techStack: ["Python", "LLaMA 2", "Serper API", "BeautifulSoup", "Streamlit", "PEFT", "Hugging Face"],
+  //   metrics: "Targeting to decrese ROUGE score, reduce the model size and memory usage and decreasing inference time",
+  //   githubUrl: "https://github.com/yaseeng-md/llama-website-summarization" // Replace with actual URL
+  // },
     
   {
     id: "sar-image-colorization",
-    title: "SAR Image Colorization",
-    description: "Research-driven GAN model to enhance SAR imagery using Pix2Pix and perceptual loss, significantly improving visual interpretability for remote sensing.",
+    title: "Hybrid Loss-Based Pix2Pix GAN for SAR Image Colorization",
+    description: "Developed a hybrid loss-based Pix2Pix GAN for SAR-to-optical image translation, investigating LAB and RGB color spaces to improve structural preservation, spectral consistency, and visual fidelity.",
     image: "/sar.jpg",
-    techStack: ["Streamlit", "PyTorch", "OpenCV", "Pix2Pix", "GANs"],
-    metrics: "Achieved 0.97 SSIM, 27.42 dB PSNR, and 0.0021 MSE",
-    githubUrl: "https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms",
-  },
-  {
-    id: "audio-deepfake-detection",
-    title: "Audio Deepfake Detection",
-    description: "Designed CNN-RNN-LSTM based deep learning models for detecting manipulated audio using MFCC and LFCC features with high accuracy.",
-    image: "/audio.jpg",
-    techStack: ["PyTorch", "Librosa", "Streamlit", "MFCC", "LSTM"],
-    metrics: "98% accuracy with MFCC-LSTM; 96% with LFCC-LSTM",
-    githubUrl: "https://github.com/yaseeng-md/Audio-DeepFake-Detection",
+    techStack: [
+      "PyTorch",
+      "OpenCV",
+      "Pix2Pix",
+      "Conditional GANs",
+      "U-Net Generator",
+      "PatchGAN Discriminator",
+      "LAB Color Space",
+      "RGB Color Space",
+      "Perceptual Loss",
+      "SSIM",
+      "PSNR",
+      "Spectral Angle Mapper (SAM)"
+    ],
+    metrics: "LAB achieved 34.65 dB PSNR and 0.9909 SSIM on barrenland; 32.55 dB PSNR and 0.9881 SSIM on agricultural scenes.",
+      githubUrl: "https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms",
   },
   {
     id: "explicit-content-detection",
-    title: "Explicit Content Detection using Vision Transformers",
-    description: "Built ViT and Swin ViT models for detecting explicit visual content with improved feature extraction accuracy over CNNs.",
+    title: "Saliency-Guided Vision Transformer for Explicit Content Detection",
+    description: "Developed a Saliency-Guided Vision Transformer combining gradient and entropy maps to enhance explicit content classification, achieving up to 98.86% accuracy.",
     image: "/explicit.jpg",
-    techStack: ["PyTorch","TensorFlow", "ViT", "Swin ViT", "Transformers", "Linux"],
-    metrics: "98.35% accuracy; 2% improvement over baseline methods",
+    techStack: [
+      "PyTorch",
+      "TensorFlow",
+      "Vision Transformer (ViT)",
+      "Swin Transformer",
+      "Saliency-Guided ViT",
+      "Gradient Maps",
+      "Entropy Maps",
+      "Linux"
+    ],
+    metrics: "98.86% accuracy on NudeNet; 98.41% on Adult Content.",
     githubUrl: "https://github.com/yaseeng-md/Explicit-Content-Detection",
   },
   // {

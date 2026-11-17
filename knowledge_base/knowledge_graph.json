@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "metadata": {
+    "repository": "yaseeng-md",
+    "purpose": "Agent Knowledge Base & Relational Graph",
+    "updatedAt": "2026-11-17T08:23:00Z"
+  },
+  "nodes": [
+    { "id": "app", "type": "entrypoint", "path": "src/App.tsx", "label": "App Root & Router" },
+    { "id": "page:Index", "type": "page", "route": "/", "path": "src/pages/Index.tsx", "label": "Index (Home)" },
+    { "id": "page:Projects", "type": "page", "route": "/projects", "path": "src/pages/Projects.tsx", "label": "All Projects" },
+    { "id": "page:ProjectDetail", "type": "page", "route": "/projects/:id", "path": "src/pages/ProjectDetail.tsx", "label": "Project Detail" },
+    { "id": "page:Experience", "type": "page", "route": "/experience", "path": "src/pages/Experience.tsx", "label": "Experience & Education" },
+    { "id": "page:Blogs", "type": "page", "route": "/blogs", "path": "src/pages/Blogs.tsx", "label": "Medium Blogs" },
+    { "id": "page:Contact", "type": "page", "route": "/contact", "path": "src/pages/Contact.tsx", "label": "Contact" },
+    { "id": "page:NotFound", "type": "page", "route": "*", "path": "src/pages/NotFound.tsx", "label": "Not Found (404)" },
+    
+    { "id": "comp:Header", "type": "component", "path": "src/components/Header.tsx", "label": "Header Navbar" },
+    { "id": "comp:Footer", "type": "component", "path": "src/components/Footer.tsx", "label": "Footer" },
+    { "id": "comp:Hero", "type": "component", "path": "src/components/Hero.tsx", "label": "Hero Section" },
+    { "id": "comp:SkillsSection", "type": "component", "path": "src/components/SkillsSection.tsx", "label": "Skills Section" },
+    { "id": "comp:ProjectsSection", "type": "component", "path": "src/components/ProjectsSection.tsx", "label": "Featured Projects Section" },
+    { "id": "comp:ProjectCard", "type": "component", "path": "src/components/ProjectCard.tsx", "label": "Project Card" },
+    { "id": "comp:AboutSection", "type": "component", "path": "src/components/AboutSection.tsx", "label": "About Section" },
+    { "id": "comp:PublicationsSection", "type": "component", "path": "src/components/PublicationsSection.tsx", "label": "Publications Section" },
+    { "id": "comp:ExperienceSection", "type": "component", "path": "src/components/ExperienceSection.tsx", "label": "Experience Section" },
+    { "id": "comp:BlogsSection", "type": "component", "path": "src/components/BlogsSection.tsx", "label": "Blogs Section" },
+    { "id": "comp:BlogCard", "type": "component", "path": "src/components/BlogCard.tsx", "label": "Blog Card Tile" },
+    { "id": "comp:ContactForm", "type": "component", "path": "src/components/ContactForm.tsx", "label": "Contact Form Grid" },
+    { "id": "asset:profile-image", "type": "static-asset", "path": "public/images/profile.webp", "label": "Profile Photograph (WebP)" },
+
+    { "id": "ui:button", "type": "ui-primitive", "path": "src/components/ui/button.tsx", "label": "Button" },
+    { "id": "ui:card", "type": "ui-primitive", "path": "src/components/ui/card.tsx", "label": "Card" },
+    { "id": "ui:badge", "type": "ui-primitive", "path": "src/components/ui/badge.tsx", "label": "Badge" },
+
+    { "id": "proj:llama-website-summarization", "type": "data-project", "label": "Website Article Summarization with LLaMA 2" },
+    { "id": "proj:sar-image-colorization", "type": "data-project", "label": "SAR Image Colorization" },
+    { "id": "proj:audio-deepfake-detection", "type": "data-project", "label": "Audio Deepfake Detection" },
+    { "id": "proj:explicit-content-detection", "type": "data-project", "label": "Explicit Content Detection using Vision Transformers" },
+    { "id": "proj:recommendation-system", "type": "data-project", "label": "Movie Recommendation System" },
+    { "id": "proj:real-time-fight-detection", "type": "data-project", "label": "Real-Time Fight Detection" }
+  ],
+  "edges": [
+    { "source": "app", "target": "page:Index", "relation": "ROUTES_TO" },
+    { "source": "app", "target": "page:Projects", "relation": "ROUTES_TO" },
+    { "source": "app", "target": "page:ProjectDetail", "relation": "ROUTES_TO" },
+    { "source": "app", "target": "page:Experience", "relation": "ROUTES_TO" },
+    { "source": "app", "target": "page:Blogs", "relation": "ROUTES_TO" },
+    { "source": "app", "target": "page:Contact", "relation": "ROUTES_TO" },
+    { "source": "app", "target": "page:NotFound", "relation": "ROUTES_TO" },
+
+    { "source": "page:Index", "target": "comp:Header", "relation": "RENDERS" },
+    { "source": "page:Index", "target": "comp:Hero", "relation": "RENDERS" },
+    { "source": "page:Index", "target": "comp:SkillsSection", "relation": "RENDERS" },
+    { "source": "page:Index", "target": "comp:ProjectsSection", "relation": "RENDERS" },
+    { "source": "page:Index", "target": "comp:ExperienceSection", "relation": "RENDERS" },
+    { "source": "comp:ExperienceSection", "target": "comp:PublicationsSection", "relation": "RENDERS" },
+    { "source": "page:Index", "target": "comp:BlogsSection", "relation": "RENDERS" },
+    { "source": "page:Index", "target": "comp:ContactForm", "relation": "RENDERS" },
+    { "source": "page:Index", "target": "comp:Footer", "relation": "RENDERS" },
+
+    { "source": "page:Blogs", "target": "comp:Header", "relation": "RENDERS" },
+    { "source": "page:Blogs", "target": "comp:BlogsSection", "relation": "RENDERS" },
+    { "source": "comp:BlogsSection", "target": "comp:BlogCard", "relation": "RENDERS" },
+    { "source": "page:Blogs", "target": "comp:Footer", "relation": "RENDERS" },
+
+    { "source": "page:Projects", "target": "comp:Header", "relation": "RENDERS" },
+    { "source": "page:Projects", "target": "comp:ProjectCard", "relation": "RENDERS" },
+    { "source": "page:Projects", "target": "comp:Footer", "relation": "RENDERS" },
+
+    { "source": "page:ProjectDetail", "target": "comp:Header", "relation": "RENDERS" },
+    { "source": "page:ProjectDetail", "target": "page:NotFound", "relation": "FALLBACKS_TO" },
+    { "source": "page:ProjectDetail", "target": "comp:Footer", "relation": "RENDERS" },
+
+    { "source": "page:Experience", "target": "comp:Header", "relation": "RENDERS" },
+    { "source": "page:Experience", "target": "comp:AboutSection", "relation": "RENDERS" },
+    { "source": "page:Experience", "target": "comp:ExperienceSection", "relation": "RENDERS" },
+    { "source": "page:Experience", "target": "comp:Footer", "relation": "RENDERS" },
+    { "source": "comp:Hero", "target": "asset:profile-image", "relation": "DISPLAYS" },
+    { "source": "comp:AboutSection", "target": "asset:profile-image", "relation": "DISPLAYS" },
+
+    { "source": "page:Contact", "target": "comp:Header", "relation": "RENDERS" },
+    { "source": "page:Contact", "target": "comp:ContactForm", "relation": "RENDERS" },
+    { "source": "page:Contact", "target": "comp:Footer", "relation": "RENDERS" },
+
+    { "source": "comp:ProjectsSection", "target": "comp:ProjectCard", "relation": "RENDERS" },
+
+    { "source": "comp:Header", "target": "ui:button", "relation": "USES" },
+    { "source": "comp:Footer", "target": "ui:button", "relation": "USES" },
+    { "source": "comp:Hero", "target": "ui:button", "relation": "USES" },
+    { "source": "comp:ProjectCard", "target": "ui:card", "relation": "USES" },
+    { "source": "comp:ProjectCard", "target": "ui:badge", "relation": "USES" },
+    { "source": "comp:ProjectCard", "target": "ui:button", "relation": "USES" },
+    { "source": "comp:SkillsSection", "target": "ui:card", "relation": "USES" },
+    { "source": "comp:ExperienceSection", "target": "ui:card", "relation": "USES" },
+    { "source": "page:ProjectDetail", "target": "ui:badge", "relation": "USES" },
+    { "source": "page:ProjectDetail", "target": "ui:button", "relation": "USES" },
+
+    { "source": "comp:ProjectsSection", "target": "proj:sar-image-colorization", "relation": "FEATURED" },
+    { "source": "comp:ProjectsSection", "target": "proj:audio-deepfake-detection", "relation": "FEATURED" },
+    { "source": "comp:ProjectsSection", "target": "proj:explicit-content-detection", "relation": "FEATURED" },
+
+    { "source": "page:Projects", "target": "proj:llama-website-summarization", "relation": "LISTS" },
+    { "source": "page:Projects", "target": "proj:sar-image-colorization", "relation": "LISTS" },
+    { "source": "page:Projects", "target": "proj:audio-deepfake-detection", "relation": "LISTS" },
+    { "source": "page:Projects", "target": "proj:explicit-content-detection", "relation": "LISTS" },
+    { "source": "page:Projects", "target": "proj:recommendation-system", "relation": "LISTS" },
+    { "source": "page:Projects", "target": "proj:real-time-fight-detection", "relation": "LISTS" }
+  ]
+}

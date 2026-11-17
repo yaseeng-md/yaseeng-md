@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from "./ui/button";
 import { Menu, X } from 'lucide-react';
+import { PROFILE } from "@/constants/profile";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'Projects', href: '/projects' },
     { name: 'Experience', href: '/experience' },
+    { name: 'Blogs', href: '/blogs' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -46,7 +48,7 @@ const Header = () => {
             to="/" 
             className="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent/80"
           >
-            Yaseen G
+            {PROFILE.shortName}
           </Link>
           
           {/* Desktop navigation */}
@@ -65,7 +67,7 @@ const Header = () => {
               </Link>
             ))}
             <Button asChild variant="outline" size="sm">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={PROFILE.resume} target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </Button>
@@ -99,7 +101,7 @@ const Header = () => {
             ))}
             <div className="px-3 py-2">
               <Button asChild size="sm" className="w-full">
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href={PROFILE.resume} target="_blank" rel="noopener noreferrer">
                   Resume
                 </a>
               </Button>

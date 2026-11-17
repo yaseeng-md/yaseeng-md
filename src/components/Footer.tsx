@@ -1,25 +1,24 @@
 
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
+import { PROFILE } from "@/constants/profile";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="bg-secondary py-12 mt-20">
       <div className="container px-4 mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <h3 className="text-xl font-semibold text-foreground">Yaseen G</h3>
+            <h3 className="text-xl font-semibold text-foreground">{PROFILE.shortName}</h3>
             <p className="text-muted-foreground mt-1 text-sm">
-              Machine Learning Engineer | MLOps Enthusiast
+              {PROFILE.title}
             </p>
           </div>
           
           <div className="flex space-x-4">
             <Button variant="ghost" size="icon" asChild>
               <a 
-                href="https://github.com/yaseeng-md" 
+                href={PROFILE.social.github} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -29,7 +28,7 @@ const Footer = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a 
-                href="https://linkedin.com/in/yaseeng-md" 
+                href={PROFILE.social.linkedin} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -39,7 +38,17 @@ const Footer = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a 
-                href="mailto:gandlurumohammedyaseen@gmail.com" 
+                href={PROFILE.social.medium} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Medium"
+              >
+                <span className="font-serif font-black text-sm">M</span>
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a 
+                href={`mailto:${PROFILE.social.email}`} 
                 aria-label="Email"
               >
                 <Mail size={20} />

@@ -14,6 +14,27 @@ export interface BlogPost {
 // export const blogs: BlogPost[] = [
 export const blogs: BlogPost[] = [
   {
+    id: "query-router",
+    title: "One Query, Multiple Destinations The Architecture Behind Query Routers",
+    excerpt:
+      "An exploration of how intelligent query routers direct user queries to the most suitable destinations using adaptive routing strategies, LangGraph, and agentic AI architecture.",
+    mediumUrl:
+      "https://medium.com/@gandlurumohammedyaseen/one-query-multiple-destinations-the-architecture-behind-query-routers-bdb4b2109cf1?sharedUserId=gandlurumohammedyaseen",
+    publishedDate: "Nov 19, 2026",
+    readTime: "50 min read",
+    category: "Generative AI",
+    tags: [
+      "Query Router",
+      "LLM Router",
+      "Semantic Router",
+      "RAG",
+      "Agentic Routing",
+      "Agents",
+      "AI",
+    ],
+    featured: true
+  },
+  {
     id: "multimodal-rag-evidence-grounding",
     title: "The Page Was Right. The Answer Was Still Wrong.",
     excerpt:

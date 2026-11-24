@@ -10,14 +10,26 @@ const ExperienceSection = () => {
     duration: "Aug 2025 – Oct 2026",
     description:
       "Engineered Agentic AI systems, autonomous robotic workflows, and production-grade computer vision solutions, focusing on execution reliability, intelligent orchestration, and operational efficiency.",
-    responsibilities: [
-      "Developed a swarm-based Agentic AI system using the Pi harness and multiple specialized Pi agents as autonomous workers, orchestrating distinct LLM applications through distributed, role-based workflows.",
-      "Architected a 3-phase execution pipeline with adaptive queue-based scheduling and indexed optimization, reducing control complexity and improving execution efficiency by approximately 30%.",
-      "Engineered and deployed a production-grade autonomous path-planning pipeline, achieving an 80% task success rate in real-world robotic operations.",
-      "Developed a raycasting-based successive approximation algorithm, improving pose correction accuracy from approximately 60% to nearly 100% on challenging edge cases.",
-      "Built an automated regression and simulation framework using Python and Flask, covering 100+ scenarios and reducing manual validation effort by approximately 70%.",
-      "Managed operations across 2 production sites, identifying system gaps, diagnosing operational bottlenecks, and implementing solutions to improve efficiency, reliability, and production throughput."
-    ],
+    // responsibilities: [
+    //   "Developed a swarm-based Agentic AI system using the Pi harness and multiple specialized Pi agents as autonomous workers, orchestrating distinct LLM applications through distributed, role-based workflows.",
+    //   "Architected a 3-phase execution pipeline with adaptive queue-based scheduling and indexed optimization, reducing control complexity and improving execution efficiency by approximately 30%.",
+    //   "Engineered and deployed a production-grade autonomous path-planning pipeline, achieving an 80% task success rate in real-world robotic operations.",
+    //   "Developed a raycasting-based successive approximation algorithm, improving pose correction accuracy from approximately 60% to nearly 100% on challenging edge cases.",
+    //   "Built an automated regression and simulation framework using Python and Flask, covering 100+ scenarios and reducing manual validation effort by approximately 70%.",
+    //   "Managed operations across 2 production sites, identifying system gaps, diagnosing operational bottlenecks, and implementing solutions to improve efficiency, reliability, and production throughput."
+    // ],
+    responsibilities:[
+  "Designed a swarm-based Agentic AI system using the Pi harness and multiple specialized Pi agents as autonomous workers, orchestrating distinct LLM applications through distributed, role-based workflows.",
+  "Built a multimodal 2D-to-3D CAD generation pipeline using Qwen3-VL, PaddleOCR, and CADQuery to interpret isometric engineering drawings and generate 3D CAD/STL models with approximately ±2 mm dimensional precision.",
+  "Trained and evaluated two binary object segmentation models for PoC using SAM3 and YOLOv6, generating pixel-level masks and reducing downstream registration error from 16% to 7% using YOLOv6.",
+  "Architected a stateful, event-driven backend with a 3-phase execution pipeline, object-based event handling, dual-stack queue scheduling for CAD and real-world coordinates, and indexed data structures for efficient execution management.",
+  "Engineered and deployed a production-grade autonomous path-planning pipeline, achieving an 80% task success rate in real-world robotic operations.",
+  "Developed a raycasting-based predictive touch algorithm using successive approximation, improving pose correction accuracy from approximately 60% to nearly 100% on challenging edge cases.",
+  "Built an automated regression and simulation framework using Python and Flask, covering 100+ scenarios and reducing manual validation effort by approximately 70%.",
+  "Optimized core execution modules through adaptive queue scheduling and indexed data structures, reducing control complexity and improving execution efficiency by approximately 30%.",
+  "Integrated AI-driven computer vision capabilities into robotic workflows, implementing object detection, segmentation, image processing, and pixel-level mask generation for downstream registration.",
+  "Managed technical operations across 2 production sites, identifying system gaps, diagnosing operational bottlenecks, and implementing solutions to improve efficiency, reliability, and production throughput."
+  ],
   },
   {
       title: "Machine Learning Intern",
@@ -26,10 +38,9 @@ const ExperienceSection = () => {
       description:
         "Developed and optimized machine learning solutions, specializing in recommendation systems, model evaluation, and scalable backend API development.",
       responsibilities: [
-        "Developed a content-based recommendation engine using TF-IDF, cosine similarity, and attribute filtering, expanding catalog coverage by 32% across low-interaction niche items.",
-        "Built a Flask REST API for top-K recommendations and similar-item retrieval with fallback logic, achieving less than 45 ms average response latency under peak load.",
-        "Evaluated category, content-based, and hybrid recommendation models, achieving an 18% lift in NDCG@10 and a 24% improvement in Precision@5 over standard heuristic baselines.",
-        "Architected an automated testing suite using pytest, achieving 92% code coverage, and implemented Locust load testing to sustain 250+ requests/sec with less than 0.1% error rate."
+      "Streamlined data preprocessing by 25% through reusable Python preprocessing and validation modules, reducing repetitive operations and inconsistent input handling.",
+      "Connected 3+ MLmodelsto backend applications through Flask REST API endpoints with request validation and exception handling.",
+      "CutGPUmemoryconsumptionby15%byoptimizing inference batch sizes, monitoring VRAM utilization, and applying PyTorch memory-management techniques to resolve CUDA out-of-memory issues"
       ],
     },
 ];
